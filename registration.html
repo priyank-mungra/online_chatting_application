@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Sign up</title>  
+    </head>
+    <body >
+        <form method='POST' action='set_profile.html'>
+            <table>
+                <tr>
+                    <td>Username</td>
+                    <td>
+                        <input type='input' name='username' autofocus required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type='password' name='password' required/>
+                </tr>
+                <tr>
+                    <td>Confirm Password</td>
+                    <td><input type='password' name='confirm_password' required/>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td><input type="tel" name="phone_number" required
+                        pattern="[0-9]{10}" placeholder="10 digit mobile number"
+                        ></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name='submit' value='Proceed'/> </td>
+                </tr>
+                    
+            </table>
+        </form>
+    </body>
+</html>
