@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
     <title>Sign up</title>  
     </head>
     <body >
-        <form method='POST' action='set_profile.html'>
+        <!-- <form method='get' action='set_profile.html'> -->
             <table>
                 <tr>
                     <td>Username</td>
                     <td>
-                        <input type='input' name='username' autofocus required/>
+                        <input type='text' name='username' autofocus required/>
                     </td>
                 </tr>
                 <tr>
@@ -27,10 +27,11 @@
                         ></td>
                 </tr>
                 <tr>
-                    <td><input type="submit" name='submit' value='Proceed'/> </td>
+                    <!-- <td colspan="2"><input type="submit" name='submit' value='Proceed'/> </td> -->
+                    <td colspan="2"> <button onclick="window.location.href='set_profile.html'">Proceed</button></td>
                 </tr>
                     
             </table>
-        </form>
+        <!-- </form> -->
     </body>
 </html>
