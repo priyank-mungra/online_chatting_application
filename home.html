@@ -4,50 +4,15 @@
 
 <head>
     <title>Home</title>
-    <style>
-        #bottom-right
-        {
-        right: 0;
-        bottom: 0;
-        position: absolute;
-        }
-
-        /* friend_list {
-            display: block;
-            background-color: darkslategrey;
-            padding: 50px; */
-            /* font-size: 30px;
-            width: 30%;
-            height: 80%;
-        }
-
-        chat_box {
-            display: block;
-            background-color: darkslategrey;
-            padding: 50px;
-            font-size: 30px;
-            width: 100%;
-            height: 80%;
-        } */
-        table{
-            display: grid;
-            border: 1px solid;
-            background-color: blanchedalmond;
-            border-color: rgb(214, 34, 34);
-        }
-        table, tr{
-            height: 100%;
-            width: 100%;
-        }
-        
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/homeCss.css"/>
 </head>
 
-<body style="width: 100%;height: 100%;">
-    <table>
-        <tr>
-            <td style="background-color:darkslategrey">
-                Application Name
+<body>
+    <div class='home'>
+        <div class="left-panal">
+
+            <div class="left-head">  
+                <img src='icon/icon_profile.png' alt='profile_pic'/>
 
                 <select name="options" id="options" >
                     <option disabled selected value style="visibility: hidden;">...</option>
@@ -56,72 +21,141 @@
                     <option value="settings">Settings</option>
                     <option value="logout">Logout</option>
                 </select>
+            </div>
+            <div class="left-contact">
+                <div class="current_contact">
+                    <p>Chandler</p>
+                    <p>at 6:00pm <span class="time_right">10:04</span> </p>
+                </div>  
 
-            </td>
-            <td style="background-color:darkslategrey">
-                Chandler
+                <div class="contact">
+                    <p>Joey</p>
+                    <p>ok bye <span class="time_right">9:23</span> </p>
+                </div>
+                
+                <div class="contact">
+                    <p>Ross</p>
+                    <p>see you in office <span class="time_right">9:10</span> </p>
+                </div>
+                
+                <div class="contact">
+                    <p>phoebs</p>
+                    <p>by <span class="time_right">8:00</span> </p>
+                </div>
 
-                <button style="align-items: flex-end;">Clear chat</button>
-            </td>
+                <div class="contact">
+                    <p>Joey</p>
+                    <p>ok bye <span class="time_right">9:23</span> </p>
+                </div>
+                
+                <div class="contact">
+                    <p>Janice</p>
+                    <p>see you in office <span class="time_right">9:10</span> </p>
+                </div>
+                
+                <div class="contact">
+                    <p>brock</p>
+                    <p>by <span class="time_right">8:00</span> </p>
+                </div>
+
+                <div class="contact">
+                    <p>Walter White</p>
+                    <p>ok bye <span class="time_right">9:23</span> </p>
+                </div>
+                
+                <div class="contact">
+                    <p>Ross</p>
+                    <p>see you in office <span class="time_right">9:10</span> </p>
+                </div>
+                
+                <div class="contact">
+                    <p>phoebs</p>
+                    <p>by <span class="time_right">8:00</span> </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="right-panal">
+
+            <div class="right-head">
+                
+                <h1>
+                    <!-- <img src='icon/icon_profile.png' alt='profile_pic'/> -->
+                    Chandler
+                </h1>
+                
+                <div class="delete-icon"><button><img src="icon/icon_delete.png"/> </button></div>
+                
+            </div>
+            <div class="right-content">
+                <div class="msg_left">
+                    <p>Hello, bro.
+                        <span class="time_left">10:00</span> </p>
+                </div>
+
+                <div class="msg_right">
+                    <p> Hi, buddy<span class="time_right">10:02</span> </p>
+                </div>
+                
+                <div class="msg_left">
+                    <p> what is the time for submiting assignment? <span class="time_left">10:03</span> </p>
+                </div>
+
+                <div class="msg_right">
+                    <p> at 6:00pm <span class="time_right">10:04</span> </p>
+                </div>
+                <div class="msg_right">
+                    <p> at 6:00pm <span class="time_right">10:04</span> </p>
+                </div><div class="msg_right">
+                    <p> at 6:00pm <span class="time_right">10:04</span> </p>
+                </div><div class="msg_right">
+                    <p> at 6:00pm <span class="time_right">10:04</span> </p>
+                </div><div class="msg_right">
+                    <p> at 6:00pm <span class="time_right">10:04</span> </p>
+                </div><div class="msg_right">
+                    <p> at 6:00pm <span class="time_right">10:04</span> </p>
+                </div><div class="msg_right">
+                    <p> at 6:00pm <span class="time_right">10:04</span> </p>
+                </div><div class="msg_right">
+                    <p> at 6:00pm <span class="time_right">10:04</span> </p>
+                </div><div class="msg_right">
+                    <p> at 6:00pm <span class="time_right">10:04</span> </p>
+                </div><div class="msg_right">
+                    <p> at 6:00pm <span class="time_right">10:04</span> </p>
+                </div>
+
+
+                <div class="msg_left">
+                    <p> what is the time for submiting assignment? <span class="time_left">10:03</span> </p>
+                </div>
+
+                <div class="msg_right">
+                    <p> at 6:00pm <span class="time_right">10:04</span> </p>
+                </div>
+                <div class="msg_right">
+                    <p> at 6:00pm <span class="time_right">10:04</span> </p>
+                </div><div class="msg_right">
+                    <p> at 6:00pm <span class="time_right">10:04</span> </p>
+                </div><div class="msg_right">
+                    <p> at 6:00pm <span class="time_right">10:04</span> </p>
+                </div><div class="msg_right">
+                    <p> at 6:00pm <span class="time_right">10:04</span> </p>
+                </div><div class="msg_right">
+                    <p> at 6:00pm <span class="time_right">10:04</span> </p>
+                </div><div class="msg_right">
+                    <p> at 6:00pm <span class="time_right">10:04</span> </p>
+                </div><div class="msg_right">
+                    <p> at 6:00pm <span class="time_right">10:04</span> </p>
+                </div><div class="msg_right">
+                    <p> at 6:00pm <span class="time_right">10:04</span> </p>
+                </div><div class="msg_right">
+                    <p> at 6:00pm <span class="time_right">10:04</span> </p>
+                </div>
+            </div>
             
-        </tr>
-        <tr>
-            <td style="background-color: darkslategrey;">
-                <!-- <friend_list> -->
-                    <!-- <table> -->
-                    <div>
-
-                        <div>
-                            <p>Chandler</p>
-                            <p>at 6:00pm <span class="time_right">10:04</span> </p>
-                        </div>
-                        <div>
-                            <p>Joey</p>
-                            <p>ok bye <span class="time_right">9:23</span> </p>
-                        </div>
-                        <div>
-                            <p>Ross</p>
-                            <p>see you in office <span class="time_right">9:10</span> </p>
-                        </div>
-                        <div>
-                            <p>phoebs</p>
-                            <p>by <span class="time_right">8:00</span> </p>
-                        </div>
-                    </div>
-                    <!-- </table> -->
-                <!-- </friend_list> -->
-            </td>
-            <td style="background-color: darkslategray;">
-                <div>
-                    <!-- <chat_box> -->
-
-                        <!-- <table> -->
-                        <div class="msg_left">
-                            <p>Hello, bro.
-                                <span class="time_left">10:00</span> </p>
-                        </div>
-
-                        <div class="msg_right">
-                            <p> Hi, buddy<span class="time_right">10:02</span> </p>
-                        </div>
-
-                        <div class="msg_left">
-                            <p> what is the time for submiting assignment? <span class="time_left">10:03</span> </p>
-                        </div>
-
-                        <div class="msg_right">
-                            <p> at 6:00pm <span class="time_right">10:04</span> </p>
-                        </div>
-
-                        <!-- </table> -->
-                    <!-- </chat_box> -->
-                    </div>
-
-            </td>
-        </tr>
-
-
-    </table>
+        </div>
+        
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,109 @@
+body{
+    background-color: #001f3f;
+    height: 100vh;
+    margin:0;
+
+}
+.home{
+    position: absolute;
+    background-color: rgb(213, 213, 231);
+    width: 80%;
+    height: 80%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.left-panal{
+    width: 30%;
+    height: 100%;
+    float : left;
+    margin: 0;
+    padding: 0;
+}
+.right-panal{
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+.left-head{
+    background-color: whitesmoke;
+    height: 9%;
+    margin: 0;
+}
+.left-head img{
+    /* float: left; */
+    width:40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.left-head select{
+    float: right;
+    margin: 10px;
+}
+
+.left-contact{
+    height: 91%;
+    /* margin-top: -20px; */
+    overflow-y: scroll;
+    background-color: whitesmoke;
+}
+.left-contact .contact{
+    border-bottom: 0.75px solid rgba(0, 0, 0, 0.300);
+}
+.left-contact .current_contact{
+    border-bottom: 0.75px solid rgba(0, 0, 0, 0.300);
+    background-color: rgb(187, 201, 196);
+}
+.right-head{
+    background-color: rgb(245, 245, 245);
+    height: 9%;
+    margin-bottom: 0;
+}
+.right-content{
+    height: 91%;
+    /* margin-top: -20px; */
+    overflow-y: scroll;
+    background-color: rgb(187, 201, 196);
+}
+.msg_left p{
+    text-align: left;
+}
+.msg_right p{
+    text-align: right;
+}
+.right-head h1{
+    width: 95%;
+    font-size: 20px;
+    padding: 0;
+    /* padding-left: 10px; */
+    float: left;
+}
+.right-head .delete-icon{
+    width: 5%;
+    margin-top:10px;
+    float: right;
+}
+.right-head img{
+    
+    width:20px;
+    height: 20px;
+    /* float: right; */
+}
+/* friend_list {
+    display: block;
+    background-color: darkslategrey;
+    padding: 50px; */
+    /* font-size: 30px;
+    width: 30%;
+    height: 80%;
+}
+
+chat_box {
+    display: block;
+    background-color: darkslategrey;
+    padding: 50px;
+    font-size: 30px;
+    width: 100%;
+    height: 80%;
+} */
