@@ -4,6 +4,7 @@
 
 <head>
     <title>Home</title>
+    <script src="home.js"></script>
     <link rel="stylesheet" type="text/css" href="css/homeCss.css"/>
 </head>
 
@@ -84,10 +85,10 @@
                     Chandler
                 </h1>
                 
-                <div class="delete-icon"><button><img src="icon/icon_delete.png"/> </button></div>
+                <div class="delete-icon"><button onClick='deleteChat()'><img src="icon/icon_delete.png"/> </button></div>
                 
             </div>
-            <div class="right-content">
+            <div class="right-content" id='chat' >
                 <div class="msg_left">
                     <p>Hello, bro.
                         <span class="time_left">10:00</span> </p>
@@ -151,6 +152,7 @@
                 </div><div class="msg_right">
                     <p> at 6:00pm <span class="time_right">10:04</span> </p>
                 </div>
+                <div id='last_msg'>delete this</div>
             </div>
             
         </div>
