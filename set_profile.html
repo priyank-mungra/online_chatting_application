@@ -1,31 +1,58 @@
-<!DOCTYPE html>
-<html lang="en-US">
-    <head>
-    <title>Profile</title>  
-    </head>
-    <body >
-        <!-- <form method='POST' action='home.html'> -->
-            <table>
-                <tr>
-                    <td>Profile Picture</td>
-                    <td>
-                        <input type="file" name='dp' accept='image/*' />
-                    </td>
-                </tr>
-                <tr>
-                    <td>Display Name</td>
-                    <td>
-                        <input type='text' name='display_name'/>
-                    </td>
-                </tr>
-                <tr>
-                    <!-- <td colspan="2"><input type="submit" name='submit' value='Save'/> </td> -->
-                    <td colspan="2">
-                        <button onclick="window.location.href='home.html';">Save</button>
-                    </td>
-                </tr>
-                    
-            </table>
-        <!-- </form> -->
-    </body>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>PriCon Setup Profile</title>
+    <link rel="icon" type="image/png" href="icon/PriCon.png" />
+
+    <style>
+        body {
+            color: aliceblue;
+        }
+        label{
+            font-size: larger;
+        }
+        .container-fluid{
+            padding: 25%;
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+
+    <form class="container p-5 " action='home.html'>
+        <div class="container-fluid">
+            <div class="form-group">
+                <label for="inputImage">Profile Picture</label>
+                <input type="file" class="form-control-file form-control-lg" id="inputImage" accept='image/*'>
+            </div>
+            <div class="form-group">
+                <label for="inputName">Display Name</label>
+                <input type="text" class="form-control-lg" id="inputName">
+            </div>
+            <button type="submit" class="btn btn-lg btn-primary">Sign up</button>
+        </div>
+    </form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
