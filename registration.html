@@ -1,37 +1,95 @@
-<!DOCTYPE html>
-<html lang="en-US">
-    <head>
-    <title>Sign up</title>  
-    </head>
-    <body >
-        <!-- <form method='get' action='set_profile.html'> -->
-            <table>
-                <tr>
-                    <td>Username</td>
-                    <td>
-                        <input type='text' name='username' autofocus required/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Password</td>
-                    <td><input type='password' name='password' required/>
-                </tr>
-                <tr>
-                    <td>Confirm Password</td>
-                    <td><input type='password' name='confirm_password' required/>
-                </tr>
-                <tr>
-                    <td>Phone Number</td>
-                    <td><input type="tel" name="phone_number" required
-                        pattern="[0-9]{10}" placeholder="10 digit mobile number"
-                        ></td>
-                </tr>
-                <tr>
-                    <!-- <td colspan="2"><input type="submit" name='submit' value='Proceed'/> </td> -->
-                    <td colspan="2"> <button onclick="window.location.href='set_profile.html'">Proceed</button></td>
-                </tr>
-                    
-            </table>
-        <!-- </form> -->
-    </body>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>PriCon Registration</title>
+    <link rel="stylesheet" href="css/registration.css" />
+    <link rel="icon" type="image/png" href="icon/PriCon.png" />
+</head>
+
+<body class="bg-dark">
+
+    <form class="container py-5" action='set_profile.html'>
+        <div class="form-group">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="form-group">
+            <label for="inputMobile">Mobile Number</label>
+            <input type="text" class="form-control" id="inputMobile"
+            pattern ="^[1-9][0-9]{9}$"
+            >
+        </div>
+        <div class="form-group">
+            <label for="inputUsername">Username</label>
+            <input type="text" class="form-control" id="inputUsername"/>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input type="password" class="form-control" id="inputPassword">
+        </div>
+        <div class="form-group">
+            <label for="inputConfirmPassword">Confirm Password</label>
+            <input type="password" class="form-control" id="inputConfirmPassword">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-5">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-5">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Gujarat</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Kerela</option>
+                    <option>Rajasthan</option>
+                    <opiton>Maharashtra</opiton>
+                    <opiton>Assam</opiton>
+                    <opiton>Karnataka</opiton>
+                    <opiton>Madhya Pradesh</opiton>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Check me out
+                </label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign up</button>
+    </form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

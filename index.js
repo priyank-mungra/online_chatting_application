@@ -1,4 +1,4 @@
-alert( "site is under construction" )
+// alert( "site is under construction" )
 
 function validate(){
     var username = document.getElementById('username').value;
